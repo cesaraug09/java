@@ -21,11 +21,12 @@ public class Lista{
         return lista.length;
     }
 
-    public void adicionar(String nome){
+    public boolean adicionar(String nome){
         if(quantidade >= lista.length){
             aumentarLista();
         }
         lista[quantidade++] = nome;
+        return true;
     }
 
     public void aumentarLista(){
